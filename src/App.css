@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,600;0,700;1,600;1,700&family=Delius+Swash+Caps&family=Jua&family=Rampart+One&family=Zen+Dots&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    border: solid 2px #003780;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    transition: 4000ms;
+}
+
+.title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00285ccb;
+    font-family: "Rampart One", sans-serif;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin: 10px;
+    /* text-shadow: 2px 2px 2px rgba(0, 23, 86, 0.345); */
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 207px);
+}
+
+tr {
+    border: solid 2px #004eb5;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -2.2px;
+    color: rgba(37, 37, 37, 0.918);
+    border: solid 1px black;
+    background-color: #eef6fe;
+    transition: 0.5s;
+}
+
+.cell:hover {
+    background-color: hsl(213, 100%, 94%);
+    /* background-color: #dff0ff; */
+    transition: 280ms;
+    cursor: cell;
+    border: solid 4px #b9d3ff;
+}
+
+#b00 {
+    display: none;
+}
+
+.btns {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 55px;
+    background-color: rgba(205, 238, 255, 0.566);
+    border: solid 2px #003780;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: "Zen Dots", sans-serif;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #0060dd;
+    /* border: solid 2px rgba(116, 13, 13, 0.348); */
+    /* border: solid 2px rgba(; */
+}
+
+.selected {
+    border: solid 6px #9ba4af67;
+    /* border: solid 6px #c2ccda71; */
+    background-color: rgb(225, 241, 255);
+    transition: 100ms;
+}
+
+.block {
+    color: rgba(49, 49, 49, 0.775);
+    background-color: hsl(213, 100%, 94%);
+}
+
+.block:hover {
+    /* background-color: hsl(200, 100%, 97%); */
+    /* color: rgba(255, 85, 55, 0.709); */
+    /* border: solid 1px black;     */
+    /* border: solid 4px #b9d3ff; */
+    border: solid 1px black;
+}
+
+.wrong {
+    color: rgb(255, 0, 0);
+}
+
+.wrong:hover {
+    background-color: rgb(255, 223, 223);
+    border: solid 1px black;
+    /* border: none; */
+}
+.wrongBlock {
+    color:red;
+}
+.correct:hover {
+    background-color: rgb(206, 255, 220);
+}
+
+.selected:hover {
+    border: solid 6px #89909967;
+    /* background-color: rgb(225, 241, 255); */
+    transition: 100ms;
+}
+
+.gameOver {
+    transition: 1000ms;
+    width: 60rem;
+}
+
+.hide {
+    transition: 10s;
+    display: none;
+}
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.answer button {
+    border-radius: 30px;
+    color: #003f76;
+    font-size: 1.35rem;
+    font-family: "Chakra Petch";
+    font-style: italic;
+    font-weight: 700;
+    width: 180px;
+    height: 43px;
+    background-color: rgb(193, 226, 255);
+    border: solid 1px #004eb5;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.answer button:hover {
+    color: rgb(47, 158, 255);
+    transition: 0.3s;
+}
+
+/* .btn:active {
+    
+} */
+
+/* .btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 2rem;
+    }
+    .btn {
+        background-color: rgb(229, 254, 255);
+        border: solid 2px black;
+        border-radius: 10px;
+        width: 65px;
+        height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
